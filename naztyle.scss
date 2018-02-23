@@ -1,0 +1,324 @@
+@import '/fonts/css/font-awesome.css';
+@import url('https://fonts.googleapis.com/css?family=Dosis|Dosis:200|Sacramento|Open+Sans+Condensed:300|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Rufina:400,700');
+
+
+$f1: Josefin;
+$f2: 'Open Sans Condensed';
+$f0: Lato, sans-serif;
+$gray: #fff;
+$bgfooter: #eef1f1;
+$gold:#f1f1f1;
+$goldH: #fafafa;
+$text1: #454F58;
+$bg1: #fff;
+$bg2: #f6f8f8;
+
+* {
+    box-sizing: border-box;
+    font-family: $f0;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: $gold;
+    font-family: $f1;
+}
+
+.naz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &Row {
+        display: flex;
+        flex-direction: row;
+    }
+		&Col {
+			display: flex;
+			flex-direction: column;
+			&.half {
+				width: 50%;
+			}
+		}
+		&ImageRound {
+			margin-top: 25%;
+			& > img {
+				border-radius: 17rem;
+				width: 65%;
+				transition: all 2s ease-out;
+				&.border {
+					border: 1rem solid #5fcf80;
+				}
+			}
+		}
+    &Opacity {
+        background-color: rgba(50, 168, 85, 0.75);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+		&Whois {
+			border: 0.2rem solid #fff;
+			margin-top: 60%;
+			font-size: 2.2rem;
+			font-family: $f2;
+			line-height: 5.6rem;
+			width: 21rem;
+			height: 6rem;
+			transition: background-color 0.3s ease-out;
+			&:hover {
+				background-color: #fff;
+				color: #32a855;
+				cursor: pointer;
+			}
+		}
+    &Bg1 {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+		&Bg2 {
+        background-color: $bg2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+				& > h2 {
+					margin-top: 5rem;
+					text-align: center;
+          font-size: 4rem;
+          font-family: $f0;
+          color: $text1;
+        }
+    }
+    &Container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        &-one {
+            background-image: url('naz2bgVietnam.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &-two {
+            background-color: white;
+        }
+    }
+    &Text {
+        margin-top: 2.5%;
+        font-weight: 300;
+        margin-left: 0;
+        & > h2 {
+            text-align: center;
+            font-size: 4rem;
+            font-family: $f0;
+            color: $text1;
+        }
+        &-cnt {
+            text-align: center;
+            font-size: 4.5rem;
+            font-family: $f2;
+            max-width: 50%;
+        }
+        & > b {
+            font-weight: bold;
+            font-size: 3.2rem;
+            font-family: $f2;
+            color: $text1;
+        }
+        &_Wrapper {
+            display: flex;
+            padding: 0 5rem;
+            margin: 5% 0;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            max-width: 80%;
+        }
+        &-med {
+            font-size: 2.5rem;
+            font-family: $f2;
+            text-align: left;
+            color: $text1;
+        }
+
+        &-min {
+            font-size: 1.2rem;
+        }
+    }
+    &Logo {
+        display: block;
+        margin-top: 10%;
+        width: 36rem;
+        height: auto;
+        & svg {
+            width:35.7rem;
+            height:100%;
+						fill: white;
+						stroke: green;
+						stroke-width: 3px;
+						stroke-dasharray: 125;
+						stroke-dashoffset: -125;
+						stroke-linecap: butt;
+						transition: all 1s ease-out;
+            &:hover {
+							fill: green;
+							stroke-dashoffset: 0;
+							stroke-dasharray: 125;
+            }
+        }
+        &.fixed {
+            margin-top: 0;
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            & svg {
+                width: 7.5rem;
+            }
+        }
+    }
+    &Menu {
+        display: flex;
+        flex-direction: row;
+        font-size: 4rem;
+        line-height: 3rem;
+        width: auto;
+        position: fixed;
+        right: 3rem;
+        top: 2rem;
+    }
+    &Line {
+        background-color: rgba(50, 168, 85, 0.75);
+        display: flex;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 0;
+
+        &.fixed {
+            box-shadow: 1px 1px 1px -1px #111;
+            height: 8rem;
+            -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+            transition: width 10s;
+        }
+        &-top {
+            top: 0;
+        }
+        &-btm {
+            background-color: #a9a498;
+            bottom: 0;
+            height: 0.2rem;
+        }
+    }
+    &Twitter {
+        display: flex;
+        flex-direction: column;
+        max-width: 40rem;
+        max-height: 65rem;
+    }
+    &Footer {
+        background-color: #eef1f1;
+        display: flex;
+        flex-direction: column;
+				color: $text1;
+        height: 5rem;
+        width: 100%;
+        &_Left {
+            display: flex;
+            font-size: 1.5rem;
+            color: $text1;
+						line-height: 4.8rem;
+            flex-direction: row;
+            padding: 0 5%;
+            font-family: $f2;
+            width: 50%;
+        }
+        &_Right {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+						align-items: center;
+            padding: 0 5%;
+            font-family: $f2;
+						color: $text1;
+        }
+        &_Socials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 50%;
+            & > li > a > i:hover {
+                    color: $text1;
+                }
+            & > li {
+                display: flex;
+                & > a,
+                & > a >i {
+                    font-size: 2.5rem;
+                    color: $text1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .nazText {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .nazSocials {
+        width: 90%;
+        &>li a {
+            font-size: 8rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .nazSocials {
+        width: 90%;
+        &>li a {
+            font-size: 5rem;
+        }
+    }
+    .nazText {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .nazLogo,
+    .nazLogo svg {
+        max-width: 30rem;
+    }
+    .nazText {
+        font-size: 3rem;
+        &-min {
+            font-size: 2rem;
+        }
+    }
+}

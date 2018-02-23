@@ -1,0 +1,458 @@
+@import url(/fonts/css/font-awesome.css);
+@import url("https://fonts.googleapis.com/css?family=Dosis|Dosis:200|Sacramento|Open+Sans+Condensed:300|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab|Rufina:400,700");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #f1f1f1;
+  font-family: Josefin;
+}
+
+.naz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.nazRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.nazCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.nazCol.half {
+  width: 50%;
+}
+
+.nazImageRound {
+  margin-top: 25%;
+}
+
+.nazImageRound > img {
+  border-radius: 17rem;
+  width: 65%;
+  -webkit-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+
+.nazImageRound > img.border {
+  border: 1rem solid #5fcf80;
+}
+
+.nazOpacity {
+  background-color: rgba(50, 168, 85, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.nazWhois {
+  border: 0.2rem solid #fff;
+  margin-top: 60%;
+  font-size: 2.2rem;
+  font-family: "Open Sans Condensed";
+  line-height: 5.6rem;
+  width: 21rem;
+  height: 6rem;
+  -webkit-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.nazWhois:hover {
+  background-color: #fff;
+  color: #32a855;
+  cursor: pointer;
+}
+
+.nazBg1 {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.nazBg2 {
+  background-color: #f6f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.nazBg2 > h2 {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 4rem;
+  font-family: Lato, sans-serif;
+  color: #454F58;
+}
+
+.nazContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.nazContainer-one {
+  background-image: url("naz2bgVietnam.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nazContainer-two {
+  background-color: white;
+}
+
+.nazText {
+  margin-top: 2.5%;
+  font-weight: 300;
+  margin-left: 0;
+}
+
+.nazText > h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: Lato, sans-serif;
+  color: #454F58;
+}
+
+.nazText-cnt {
+  text-align: center;
+  font-size: 4.5rem;
+  font-family: "Open Sans Condensed";
+  max-width: 50%;
+}
+
+.nazText > b {
+  font-weight: bold;
+  font-size: 3.2rem;
+  font-family: "Open Sans Condensed";
+  color: #454F58;
+}
+
+.nazText_Wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 5rem;
+  margin: 5% 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  max-width: 80%;
+}
+
+.nazText-med {
+  font-size: 2.5rem;
+  font-family: "Open Sans Condensed";
+  text-align: left;
+  color: #454F58;
+}
+
+.nazText-min {
+  font-size: 1.2rem;
+}
+
+.nazLogo {
+  display: block;
+  margin-top: 10%;
+  width: 36rem;
+  height: auto;
+}
+
+.nazLogo svg {
+  width: 35.7rem;
+  height: 100%;
+  fill: white;
+  stroke: green;
+  stroke-width: 3px;
+  stroke-dasharray: 125;
+  stroke-dashoffset: -125;
+  stroke-linecap: butt;
+  -webkit-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.nazLogo svg:hover {
+  fill: green;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 125;
+}
+
+.nazLogo.fixed {
+  margin-top: 0;
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+}
+
+.nazLogo.fixed svg {
+  width: 7.5rem;
+}
+
+.nazMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-size: 4rem;
+  line-height: 3rem;
+  width: auto;
+  position: fixed;
+  right: 3rem;
+  top: 2rem;
+}
+
+.nazLine {
+  background-color: rgba(50, 168, 85, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 0;
+}
+
+.nazLine.fixed {
+  -webkit-box-shadow: 1px 1px 1px -1px #111;
+  box-shadow: 1px 1px 1px -1px #111;
+  height: 8rem;
+  -webkit-transition: width 2s;
+  /* For Safari 3.1 to 6.0 */
+  -webkit-transition: width 10s;
+  -o-transition: width 10s;
+  transition: width 10s;
+}
+
+.nazLine-top {
+  top: 0;
+}
+
+.nazLine-btm {
+  background-color: #a9a498;
+  bottom: 0;
+  height: 0.2rem;
+}
+
+.nazTwitter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 40rem;
+  max-height: 65rem;
+}
+
+.nazFooter {
+  background-color: #eef1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #454F58;
+  height: 5rem;
+  width: 100%;
+}
+
+.nazFooter_Left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+  color: #454F58;
+  line-height: 4.8rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0 5%;
+  font-family: "Open Sans Condensed";
+  width: 50%;
+}
+
+.nazFooter_Right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 5%;
+  font-family: "Open Sans Condensed";
+  color: #454F58;
+}
+
+.nazFooter_Socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.nazFooter_Socials > li > a > i:hover {
+  color: #454F58;
+}
+
+.nazFooter_Socials > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nazFooter_Socials > li > a,
+.nazFooter_Socials > li > a > i {
+  font-size: 2.5rem;
+  color: #454F58;
+}
+
+@media (max-width: 1024px) {
+  .nazText {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .nazSocials {
+    width: 90%;
+  }
+  .nazSocials > li a {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .nazSocials {
+    width: 90%;
+  }
+  .nazSocials > li a {
+    font-size: 5rem;
+  }
+  .nazText {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .nazLogo,
+  .nazLogo svg {
+    max-width: 30rem;
+  }
+  .nazText {
+    font-size: 3rem;
+  }
+  .nazText-min {
+    font-size: 2rem;
+  }
+}
